@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="./travel_recommendation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b605949882.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>WanderWise</title>
+  </head>
+  <body class="blur-overlay">
+    <nav>
+      <div class="logo">
+        <h1><a href="#">WanderWise</a></h1>
+      </div>
+
+      <ul class="links">
+        <li><a href="#" id="homeBtn"> Home </a></li>
+        <li><a href="#about_us.html" id="aboutUsBtn"> About us </a></li>
+        <li><a href="#contact_us" id="contactUsBtn"> Contact Us </a></li>
+      </ul>
+
+      <div id="searchBar">
+        <input
+          id="search-input"
+          class="search-bar"
+          placeholder="Enter a destination or keyword"
+        />
+        <i class="fa-solid fa-magnifying-glass" style="margin-right: 10px"></i>
+        <button id="search" style="margin-right: 10px">Search</button>
+        <button id="clear">Clear</button>
+      </div>
+    </nav>
+
+    <div class="line"></div>
+    <aside id="side-nav">
+      <i class="fa-brands fa-instagram fa-2x"></i>
+      <i class="fa-brands fa-youtube fa-2x"></i>
+      <i class="fa-brands fa-twitter fa-2x"></i>
+      <i class="fa-brands fa-facebook-f fa-2x"></i>
+    </aside>
+
+    <div id="main-content"></div>
+  </body>
+  <script src="./travel_recommendation.js"></script>
+  <script>
+    // initial load home
+    $(function () {
+      $("#main-content").load("main.html");
+    });
+  </script>
+</html>
